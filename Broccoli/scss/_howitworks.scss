@@ -1,0 +1,87 @@
+#howitworks {
+	background: url(../img/bg-green-sec.png);
+	padding-top: 100px;
+	padding-bottom: 80px;
+	min-height: 616px;
+	@media (max-width: 991px) {
+		padding: 80px 0;
+		.row [class*='col-'] {
+			margin-bottom: 35px;
+			&:nth-child(2n+1) {
+				clear: both;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		padding: 60px 0;
+	}
+	@media (max-width: 470px) {
+		[class*='col-'] {
+			width: 100%;
+		}
+	}
+}
+
+.bg-howitworks {
+	position: absolute;
+	top: 27px;
+	z-index: 0;
+}
+
+.bg-howitworks_left {
+	left: 38px;
+}
+
+.bg-howitworks_right {
+	right: 38px;
+}
+
+.how {
+	text-align: center;
+	cursor: default;
+	@media (max-width: 470px) {
+		max-width: 360px;
+		margin: 0 auto;
+	}
+	&:hover {
+		.how__icon {
+			animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+		}
+	}
+}
+
+.how__icon {
+	margin-bottom: 35px;
+	position: relative;
+	@media (max-width: 991px) {
+		margin-bottom: 15px;
+	}
+}
+
+.how__title {
+	color: #fff;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 1.8px;
+	margin-bottom: 5px;
+}
+
+.how__text {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8;
+}
+._h-tab {
+	@media (max-width: 991px) {
+		display: none;
+	}
+}
+
+._h-mob {
+	@media (max-width: 576px) {
+		display: none;
+	}
+}

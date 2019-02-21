@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#92c64e">
+	<title>Broccoli</title>
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#1fa426">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="hamburger" role="button">
+		<div class="span-wrap"><span></span><span></span><span></span><span></span></div>
+	</div>
+	<header>
+		<div class="container"><a href="index.html" class="header-logo"><img src="img/logo.svg" alt="logo broccoli"></a>
+			<div class="header-top">
+				<div class="header-top__item">
+					<a href="map" target="_blank" class="location">м. Хмельницький</a>
+				</div>
+				<div class="header-top__item">
+					<a href="tel:+380989000090" class="phone">098 900 00 90</a>
+					<a href="#callback" data-toggle="modal" class="callorder"><span>Замовити дзвінок</span></a>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<ul id="nav">
+					<li><a href="#about">про нас</a></li>
+					<li><a href="#benefits">переваги</a></li>
+					<li><a href="#howitworks">як це працює</a></li>
+					<li><a href="#calc-section">калькулятор</a></li>
+					<li><a href="#programms">програми харчування</a></li>
+					<li><a href="#menu">наше меню</a></li>
+					<li><a href="#testemonials">відгуки</a></li>
+					<li><a href="#contacts">контакти</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="banner">
+			<div class="banner-bg">
+				<div class="banner-bg__img jsAppendRight a-hidden">
+					<img src="img/bg-banner.png" alt="">
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-9 col-md-7">
+							<div class="banner-text">
+								<div class="banner-title jsAppendLeft">Сервіс доставки збалансованого харчування</div>
+								<div class="banner-subtitle jsAppendLeft">Відчуйте корсить та насолоджуйтеся смаком протягом дня без зайвих зусиль!</div>
+								<div class="banner-text__buttons"><a href="#order" data-toggle="modal" class="butn butn_wh">замовити</a><a href="#price" data-toggle="modal" class="butn butn_transp">наші ціни</a></div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-md-5 _h-mob">
+							<div class="banner-img">
+								<img src="img/img-banner.png" alt="" class="banner-img__main jsAppendRight">
+								<img src="img/img-banner-moved.png" alt="" class="banner-img__move jsAppendRight cssMove">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="bg-about jsAppendLeft">
+				<img src="img/bg-about.png" alt="">
+			</div>
+			<div class="container">
+				<div class="row about_broccoli">
+					<div class="col-5 col-sm-12 col-md-6 about-img _h-mob">
+						<img src="img/img-about.png" alt="" class="about-img__main jsAppendLeft">
+						<img src="img/img-about-moved.png" alt="" class="about-img__moved jsAppendLeft cssMove">
+					</div>
+					<div class="col-12 col-sm-12 col-md-6">
+						<div class="section-title">Про Broccoli</div>
+						<div class="text">
+							<p>Проект “Broccoli” створений для людей, які ведуть та прагнуть вести здоровий спосіб життя, для професійніх спортсменів та людей які не хочуть витрачати свій час на походи у магазин та приготування їжі. З нами ви отримаєте не тільке готові набори харчування протягом дня, але й мотивацію і підтримку від наших спеціалістів.</p>
+						</div>
+						<div class="about-butn-holder"><a href="#order" data-toggle="modal" class="butn">спробувати зараз</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="benefits">
+			<div class="bg-benefits jsAppendRight"><img src="img/bg-benefits.png" alt=""></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="section-title">Наші переваги</div>
+						<ul class="benefits-list">
+							<li>
+								<div class="icon-benefit icon-benefit_1"></div><span>Меню і таблиця калорійності розроблено дієтологом спільно з кухарем та фітнес тренером</span>
+							</li>
+							<li>
+								<div class="icon-benefit icon-benefit_2"></div><span>Правильне харчування протягом дня без зайвих зусиль</span>
+							</li>
+							<li>
+								<div class="icon-benefit icon-benefit_3"></div><span>Різноманітне меню та постійне оновлення</span>
+							</li>
+							<li>
+								<div class="icon-benefit icon-benefit_4"></div><span>Тількі свіжі і якісні продукти</span>
+							</li>
+							<li>
+								<div class="icon-benefit icon-benefit_5"></div><span>Професіний підхід</span>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-5 col-md-6 _h-mob">
+						<div class="benefits__img"><img src="img/img-benefits.png" alt="" class="benefits__img-main jsAppendRight"><img src="img/img-benefits-moved.png" alt="" class="benefits__img-moved jsAppendRight cssMove"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="howitworks">
+			<div class="bg-howitworks bg-howitworks_left jsAppendLeft _h-tab"><img src="img/bg-howitworks-left.png" alt=""></div>
+			<div class="bg-howitworks bg-howitworks_right jsAppendRight _h-tab"><img src="img/bg-howitworks-right.png" alt=""></div>
+			<div class="container">
+				<div class="section-title _c-wh text-center">Як це працює</div>
+				<div class="row">
+					<div class="col-6 col-md-3">
+						<div class="how">
+							<div class="how__icon">
+								<img src="img/icon-how1.svg" alt="">
+							</div>
+							<div class="how__title">1</div>
+							<div class="how__text">Ви обераєте необхідну програму за допомогою он-лайн калькулятора або консультацією у дієтолога</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="how">
+							<div class="how__icon">
+								<img src="img/icon-how2.svg" alt="">
+							</div>
+							<div class="how__title">2</div>
+							<div class="how__text">Ми готуємо для вас</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="how">
+							<div class="how__icon">
+								<img src="img/icon-how3.svg" alt="">
+							</div>
+							<div class="how__title"> 3</div>
+							<div class="how__text">Доставляємо замовлення у зручний для вас час і місце</div>
+						</div>
+					</div>
+					<div class="col-6 col-md-3">
+						<div class="how">
+							<div class="how__icon">
+								<img src="img/icon-how4.svg" alt="">
+							</div>
+							<div class="how__title">4</div>
+							<div class="how__text">Ви харчуєтеся правильно та смачно впродовж дня</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="calc-section">
+			<div class="bg-calc-section jsAppendRight">
+				<img src="img/img-calc-move-on-start.png" alt="">
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="section-title">Онлайн калькулятор калорій</div>
+						<div class="text text_fz20">
+							<p>Розрахунок денної норми калорій визначається за допомогою таких показників як вага, зріст, вік та активність. Пам’ятайте, що кожна людина індивідуальна і кожна формула може мати похибку.</p>
+						</div>
+						<div id="calc">
+							<div class="row">
+								<div class="col-md-6">
+									<div id="sex" class="input-row">
+										<div class="input-title">Ваша стать</div>
+										<select>
+											<option value="-161">Жіноча</option>
+											<option value="5">Чоловіча</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div id="goal" class="input-row">
+										<div class="input-title">Ціль</div>
+										<select>
+											<option value="1">Підтримка ваги</option>
+											<option value="0.85">Зниження ваги</option>
+											<option value="1.1">Набір ваги</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="row input-row">
+										<div class="col-sm-4">
+											<div class="input-title">Вік</div>
+											<input id="age" type="number" placeholder="років" min="5" max="267" class="calc-input jsNumberOnly">
+										</div>
+										<div class="col-sm-4">
+											<div class="input-title">Ріст</div>
+											<input id="height" type="number" placeholder="см" min="74" max="271" class="calc-input jsNumberOnly">
+										</div>
+										<div class="col-sm-4">
+											<div class="input-title">Вага</div>
+											<input id="weight" type="number" placeholder="кг" min="30" max="175" class="calc-input jsNumberOnly">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div id="activity" class="input-row">
+										<div class="input-title">Активність</div>
+										<select>
+											<option value="1.2">Сидячий спосіб життя (мінімальна активність протягом дня)</option>
+											<option value="1.3">Тренування 2-3 рази в тиждень</option>
+											<option value="1.45">Тренування 4-5 раз в тиждень</option>
+											<option value="1.6">Інтенсивні тренування 4-5 раз в тиждень</option>
+											<option value="1.8">Інтенсивні тренування щодня</option>
+											<option value="1.9">Важкі фізичні навантаження щодня (професійні спортсмени)</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="butn-row">
+										<button id="jsCalc" class="butn">розрахувати</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="calc-img">
+							<img src="img/img-calc.png" alt="" class="calc-img__main jsAppendRight">
+							<img src="img/img-calc-moved.png" alt="" class="calc-img__moved jsAppendRight cssMove">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="programms">
+			<div class="bg-programms bg-programms_left jsAppendLeft">
+				<img src="img/bg-programms-left.png" alt="">
+			</div>
+			<div class="bg-programms bg-programms_right jsAppendRight _h-tab">
+				<img src="img/bg-programms-right.png" alt="">
+			</div>
+			<div class="container">
+				<div class="section-title text-center">Програми харчування</div>
+				<div class="programms-wrap">
+					<div class="programm">
+						<div class="programm__icon">
+							<img src="img/icon-programm-weight-loss.svg" alt="">
+						</div>
+						<div class="programm__title">Схуднення</div>
+						<div class="programm__label-holder">
+							<div class="programm__label">1200 калл</div>
+							<div class="programm__label">1400 калл</div>
+						</div>
+						<div class="programm__text">
+							<p>Збалансоване харчування для зниження ваги тіла.</p>
+							<p>Дозволяє досягнути бажаного результат за короткий термін. Рекомендується на недовгий період часу.</p>
+						</div>
+					</div>
+					<div class="programm">
+						<div class="programm__icon">
+							<img src="img/icon-programm-balance.svg" alt="">
+						</div>
+						<div class="programm__title">баланс</div>
+						<div class="programm__label-holder">
+							<div class="programm__label">1600 калл</div>
+							<div class="programm__label">1900 калл</div>
+							<div class="programm__label">2100 калл</div>
+						</div>
+						<div class="programm__text">
+							<p>Розраховане для тих хто уже досягнув результатіві прагне підтримувати їх. Покращує обмін речовин та самопочуття, і стимулює роботу всього організма.</p>
+						</div>
+					</div>
+					<div class="programm">
+						<div class="programm__icon">
+							<img src="img/icon-programm-active.svg" alt="">
+						</div>
+						<div class="programm__title">Актив</div>
+						<div class="programm__label-holder">
+							<div class="programm__label">2400 калл</div>
+							<div class="programm__label">2700 калл</div>
+							<div class="programm__label">3100 калл</div>
+						</div>
+						<div class="programm__text">
+							<p>Збалансоване харчування для підтримки ваги тіла спортсменів з досвідом, а також підходить для якісного набору ваги тіла без зайвого жиру початківцям.</p>
+						</div>
+					</div>
+					<div class="programm">
+						<div class="programm__icon">
+							<img src="img/icon-programm-idividual.svg" alt="">
+						</div>
+						<div class="programm__title">індивідуальна</div>
+						<div class="programm__text">
+							<p>Збалансоване харчування для підтримки ваги тіла спортсменів з досвідом, а також підходить для якісного набору ваги тіла без зайвого жиру початківцям.</p>
+						</div>
+						<div class="programm__label-holder"></div>
+					</div>
+					<div class="programm">
+						<div class="programm__icon">
+							<img src="img/icon-programm-detox.svg" alt="">
+						</div>
+						<div class="programm__title">детокс</div>
+						<div class="programm__text">
+							<p>Збалансоване харчування для підтримки ваги тіла спортсменів з досвідом, а також підходить для якісного набору ваги тіла без зайвого жиру початківцям.</p>
+						</div>
+						<div class="programm__label-holder"></div>
+					</div>
+				</div>
+				<div class="call-to-action">
+					<div class="call-to-action__item call-to-action__text">Правильне харчування протягом дня, спеціально розроблене дієтологом та фітнес-тренером!</div>
+					<div class="call-to-action__item call-to-action__butn">
+						<a href="#ask" data-toggle="modal" class="butn">Запитати</a>
+					</div>
+					<div class="call-to-action__item call-to-action__img">
+						<img src="img/img-call-to-action.png" alt="" class="call-to-action__img-main jsAppendRight">
+						<img src="img/img-call-to-action-moved.png" alt="" class="call-to-action__img-moved jsAppendRight cssMove">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="menu">
+			<div class="bg-menu jsAppendRight">
+				<img src="img/bg-menu.png" alt="">
+			</div>
+			<div class="container">
+				<div class="section-title _c-wh text-center">Наше меню</div>
+				<div class="section-subtitle _c-wh text-center">Приблизне меню на тиждень програми Баланс на 1600 калл. Меню не повторюється протягом 3 тижнів та постійно оновлююється. Програми відрізняються розміром порції, кількістю вуглеводів та послідовністю страв впродовж дня.</div>
+				<div class="row">
+					<div class="col-md-7 col-lg-6">
+						<ul class="day-tabs nav nav-pills mb-3" id="pills-tab" role="tablist">
+							<li class="nav-item"><a class="active show" data-toggle="tab" href="#day1">1 день</a></li>
+							<li class="nav-item"><a data-toggle="tab" href="#day2">2 день</a></li>
+							<li class="nav-item"><a data-toggle="tab" href="#day3">3 день</a></li>
+							<li class="nav-item"><a data-toggle="tab" href="#day4">4 день</a></li>
+							<li class="nav-item"><a data-toggle="tab" href="#day5">5 день</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div id="day1" class="tab-pane fade active show">
+						<div class="row">
+							<div class="col-md-7 col-lg-6">
+								<div class="menu">
+									<div class="menu__title">
+										<span class="menu__title-item-meal">СНІДАНОК</span>
+										<span class="menu__title-item-time">з 7.00 до 9.00</span>
+									</div>
+									<div class="menu__text">Вівсянка з сушеними ягодами годжі та горіхами.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ДРУГИЙ СНІДАНОК</span>
+										<span class="menu__title-item-time">з 10.00 до 12.00</span>
+									</div>
+									<div class="menu__text">Салат з томатами та моцарелою, хлібець.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ОБІД</span>
+										<span class="menu__title-item-time">з 12.00 до 14.00</span>
+									</div>
+									<div class="menu__text">Соба з мясними кульками та овочами.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ПОЛУДЕНОК</span>
+										<span class="menu__title-item-time">з 15.00 до 17.00</span>
+									</div>
+									<div class="menu__text">Творог з грейпфрутом, домашній йогурт.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ВЕЧЕРЯ</span>
+										<span class="menu__title-item-time">з 17.00 до 20.00</span>
+									</div>
+									<div class="menu__text">Теплий овочевий салат та м’ясний рулет.</div>
+									<div class="menu__text menu__text_sum">Денний раціон 1600,4 ккал<br>БЖУ 95,52 / 52.81 / 152,3</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-lg-6">
+								<div class="menu__img "><img src="img/menu1.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div id="day2" class="tab-pane fade">
+						<div class="row">
+							<div class="col-md-7 col-lg-6">
+								<div class="menu">
+									
+									<div class="menu__title">
+										<span class="menu__title-item-meal">СНІДАНОК</span>
+										<span class="menu__title-item-time">з 7.00-9.00</span>
+									</div>
+									<div class="menu__text">Омлет зі шпинатом, рол овочевий.<br> Яблуко.</div>
+									
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ДРУГИЙ СНІДАНОК</span>
+										<span class="menu__title-item-time">з 10.00-12.00</span>
+									</div>
+									<div class="menu__text">Смузі із фруктів.</div>
+									
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ОБІД</span>
+										<span class="menu__title-item-time">з 12.00 до 14.00</span>
+									</div>
+									<div class="menu__text">Курячий бульйон.<br> Теплий салат з нутом.</div>
+									
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ПОЛУДЕНКОК</span>
+										<span class="menu__title-item-time">з 15.00 по 17.00</span>
+									</div>
+									<div class="menu__text">Сирна запіканка з зеленню.</div>
+									
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ВЕЧЕРЯ</span>
+										<span class="menu__title-item-time">з 17.00 до 20.00</span>
+									</div>
+									<div class="menu__text">Запечена форель з овочами.</div>
+									<div class="menu__text menu__text_sum">Денний раціон 1553,2 ккал<br>БЖУ 114,23/ 59,91 / 129,8</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-lg-6">
+								<div class="menu__img "><img src="img/menu2.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div id="day3" class="tab-pane fade">
+						<div class="row">
+							<div class="col-md-7 col-lg-6">
+								<div class="menu">
+									<div class="menu__title">
+										<span class="menu__title-item-meal">СНІДАНОК</span>
+										<span class="menu__title-item-time">з 7.00 до 9.00</span>
+									</div>
+									<div class="menu__text">Вівсянка з фруктами.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ДРУГИЙ СНІДАНОК</span>
+										<span class="menu__title-item-time">з 10.00 до 12.00</span>
+									</div>
+									<div class="menu__text">Сирники.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ОБІД</span>
+										<span class="menu__title-item-time">з 12.00-14.00</span>
+									</div>
+									<div class="menu__text">Гречка з морквою.<br> Котлети на пару.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ПОЛУДЕНОК</span>
+										<span class="menu__title-item-time">з 15.00 до 17.00</span>
+									</div>
+									<div class="menu__text">Мікс горіхів і насіння.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ВЕЧЕРЯ</span>
+										<span class="menu__title-item-time">з 17.00 до 20.00</span>
+									</div>
+									<div class="menu__text">Морський окунь запечений з овочами.</div>
+									<div class="menu__text menu__text_sum">Денний раціон 1559,3кал<br>БЖУ 84,9 / 65,6/ 144,34</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-lg-6">
+								<div class="menu__img "><img src="img/menu3.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div id="day4" class="tab-pane fade">
+						<div class="row">
+							<div class="col-md-7 col-lg-6">
+								<div class="menu">
+									<div class="menu__title">
+										<span class="menu__title-item-meal">СНІДАНОК</span>
+										<span class="menu__title-item-time">з 7.00 до 9.00</span>
+									</div>
+									<div class="menu__text">Фрітата овочева з сиром фета.<br> Творожно-моркв'яний пиріг.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ДРУГИЙ СНІДАНОК</span>
+										<span class="menu__title-item-time">з 10.00 до 12.00</span>
+									</div>
+									<div class="menu__text">Сезонні фрукти.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ОБІД</span>
+										<span class="menu__title-item-time">з 12.00 до 14.00</span>
+									</div>
+									<div class="menu__text">Рис з овочами.<br> Печінка тушкована.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ПОЛУДЕНОК</span>
+										<span class="menu__title-item-time">з 15.00 до 17.00</span>
+									</div>
+									<div class="menu__text">Запечена груша з творогом.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ВЕЧЕРЯ</span>
+										<span class="menu__title-item-time">з 17.00 до 20.00</span>
+									</div>
+									<div class="menu__text">Брюсельська капуста з телетяною.</div>
+									<div class="menu__text menu__text_sum">Денний раціон  1549,2 ккал<br>БЖУ 92,89/ 59,9 / 127,9</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-lg-6">
+								<div class="menu__img "><img src="img/menu4.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div id="day5" class="tab-pane fade">
+						<div class="row">
+							<div class="col-md-7 col-lg-6">
+								<div class="menu">
+									<div class="menu__title">
+										<span class="menu__title-item-meal">СНІДАНОК</span>
+										<span class="menu__title-item-time">з 7.00 до 9.00</span>
+									</div>
+									<div class="menu__text">Кіноа з томатами і яйцем.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ДРУГИЙ СНІДАНОК</span>
+										<span class="menu__title-item-time">з 10.00 до 12.00</span>
+									</div>
+									<div class="menu__text">Корсиний десерт з гранолою і фруктами.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ОБІД</span>
+										<span class="menu__title-item-time">з 12.00 до 14.00</span>
+									</div>
+									<div class="menu__text">Суп-пюре з броколі.<br> Лазанья.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ПОЛУДЕНОК</span>
+										<span class="menu__title-item-time">з 15.00 до 17.00</span>
+									</div>
+									<div class="menu__text">Творожна запіканка з курагою.</div>
+									<div class="menu__title">
+										<span class="menu__title-item-meal">ВЕЧЕРЯ</span>
+										<span class="menu__title-item-time">з 17.00 до 21.00</span>
+									</div>
+									<div class="menu__text">Телятина у травах на грилі.<br> Мікс овочевий.</div>
+									<div class="menu__text menu__text_sum">Денний раціон 1602,5 ккал<br>БЖУ 90,22 / 54,57/ 174,5</div>
+								</div>
+							</div>
+							<div class="col-md-5 col-lg-6">
+								<div class="menu__img "><img src="img/menu5.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="testemonials">
+			<div class="bg-testemonials bg-testemonials_left jsAppendLeft _h-tab">
+				<img src="img/bg-testemonials-left.png" alt="">
+			</div>
+			<div class="bg-testemonials bg-testemonials_right jsAppendRight">
+				<img src="img/bg-testemonials-right.png" alt="">
+			</div>
+			<div class="container">
+				<div class="section-title text-center">Відгуки клієнтів</div>
+				<div class="slider-wrap">
+					<div class="slider">
+						<div class="slider__item">
+							<div class="testemonial">
+								<div class="circles">
+									<div class="circle"></div>
+									<div class="circle"></div>
+									<div class="circle"></div>
+									<div class="circle"></div>
+								</div>
+								<div class="testemonial__info">
+									<div class="testemonial__title">
+										<div class="testemonial__name">ірина гончар</div>
+										<div class="testemonial__date">11.11.2017</div>
+									</div>
+									<div class="testemonial__text">Так, спробував сьогодні доставку обідів. Що сподобалось : чітко по калоріям 2200 – те що треба,коли ходиш в зал,щоб зігнати пузіко) СУП ...</div><a href="#testemonial1" data-toggle="modal" class="testemonial__read-more">читати далі</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="testemonial">
+								<div class="circles circles_2">
+									<div class="circle"></div>
+									<div class="circle"></div>
+									<div class="circle"></div>
+								</div>
+								<div class="testemonial__info">
+									<div class="testemonial__title">
+										<div class="testemonial__name">ірина гончар</div>
+										<div class="testemonial__date">11.11.2017</div>
+									</div>
+									<div class="testemonial__text">Так, спробував сьогодні доставку обідів. Що сподобалось : чітко по калоріям 2200 – те що треба,коли ходиш в зал,щоб зігнати пузіко) СУП ...</div><a href="#testemonial1" data-toggle="modal" class="testemonial__read-more">читати далі</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="testemonial">
+								<div class="circles">
+									<div class="circle"></div>
+									<div class="circle"></div>
+									<div class="circle"></div>
+									<div class="circle"></div>
+								</div>
+								<div class="testemonial__info">
+									<div class="testemonial__title">
+										<div class="testemonial__name">ірина гончар</div>
+										<div class="testemonial__date">11.11.2017</div>
+									</div>
+									<div class="testemonial__text">Так, спробував сьогодні доставку обідів. Що сподобалось: чітко по калоріям 2200 – те що треба,коли ходиш в зал,щоб зігнати пузіко) СУП ...</div><a href="#testemonial1" data-toggle="modal" class="testemonial__read-more">читати далі</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="testemonial">
+								<div class="circles circles_2">
+									<div class="circle"></div>
+									<div class="circle"></div>
+									<div class="circle"></div>
+									<div class="circle"></div>
+								</div>
+								<div class="testemonial__info">
+									<div class="testemonial__title">
+										<div class="testemonial__name">ірина гончар</div>
+										<div class="testemonial__date">11.11.2017</div>
+									</div>
+									<div class="testemonial__text">Так, спробував сьогодні доставку обідів. Що сподобалось : чітко по калоріям 2200 – те що треба,коли ходиш в зал,щоб зігнати пузіко) СУП ...</div><a href="#testemonial1" data-toggle="modal" class="testemonial__read-more">читати далі</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="testemonials-butn">
+					<a href="#feedback" data-toggle="modal" class="butn">залишити відгук</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer id="contacts">
+		<div class="container">
+			<div class="footer-logo-wrap">
+				<a href="#" class="logo">
+					<img src="img/logo-wh.svg" alt="logo broccoli">
+				</a>
+			</div>
+			<div class="footer-links">
+				<div class="footer-links__item">
+					<div class="footer-link">
+						<div class="footer-link__title">Адреса</div>
+						<a href="https://goo.gl/maps/YJkG1q4Ffhw" target="_blank" class="footer-location">м. Хмельницький,<br> вул. Проскурівська, 47</a>
+					</div>
+				</div>
+				<div class="footer-links__item">
+					<div class="footer-link">
+						<div class="footer-link__title">Телефон</div>
+						<a href="tel:+380989000090" class="footer-phone">098 900 00 90</a>
+					</div>
+				</div>
+				<div class="footer-links__item">
+					<div class="footer-link">
+						<div class="footer-link__title">Соціальні мережі</div>
+						<a href="#" class="soc _ins"></a>
+						<a href="#" class="soc _fb"></a>
+						<a href="#thanks" data-toggle="modal" class="soc _yt"></a>
+					</div>
+				</div>
+				<div class="footer-links__item">
+					<div class="footer-link">
+						<div class="footer-link__title">Розробка сайту:</div>
+						<a href="http://deepdesign.com.ua/" target="_blank" class="dd"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="areaForLoader">
+		<div class="preloader">
+			<img src="img/logo-wh-sm.svg" alt="">
+		</div>
+	</div>
+	<div class="modals">
+		<div id="callback" role="dialog" class="modal fade popup">
+			<div class="modal-dialog modal-dialog_sm">
+				<!-- <div role="button" data-dismiss="modal" class="close-x"></div> -->
+				<button class="close-x" type="button" data-dismiss="modal" aria-label="Close">
+					<!-- <span aria-hidden="true">×</span> -->
+				</button>
+				<div class="modal-content">
+					<div class="modal-content__img">
+						<img src="img/logo-sm.svg" alt="">
+					</div>
+					<div class="modal-content__hiding-content">
+						<div class="modal-content__title">Замовити дзвінок</div>
+						<div class="modal-content__subtitle"> Заповніть форму заявки для зворотнього зв’язку!</div>
+						<form id="callbackForm" method="POST" onsubmit="return false">
+							<div class="modal-input-row">
+								<input type="text" name="name" placeholder="Ваше ім`я" class="modal-input">
+							</div>
+							<div class="modal-input-row">
+								<input type="tel" name="tel" data-mask="+38-(000)-000-00-00" placeholder="Номер телефону" class="modal-input">
+							</div>
+							<div class="modal-butn-row">
+								<button type="submit" data-rel="callbackForm" class="butn">спробувати зараз</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="order" role="dialog" class="modal fade popup">
+			<div class="modal-dialog modal-dialog_sm">
+				<div role="button" data-dismiss="modal" class="close-x"></div>
+				<div class="modal-content">
+					<div class="modal-content__img">
+						<img src="img/logo-sm.svg" alt="">
+					</div>
+					<div class="modal-content__hiding-content">
+						<div class="modal-content__title">Спробуйте зараз</div>
+						<div class="modal-content__subtitle"> Заповніть форму заявки для зворотнього зв’язку!</div>
+						<form id="orderForm" method="POST" onsubmit="return false">
+							<div class="modal-input-row">
+								<input type="text" name="name" placeholder="Ваше ім`я" class="modal-input">
+							</div>
+							<div class="modal-input-row">
+								<input type="tel" name="tel" data-mask="+38-(000)-000-00-00" placeholder="Номер телефону" class="modal-input">
+							</div>
+							<div class="modal-butn-row">
+								<button type="submit" data-rel="orderForm" class="butn">спробувати зараз</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="ask" role="dialog" class="modal fade popup">
+			<div class="modal-dialog modal-dialog_sm">
+				<div role="button" data-dismiss="modal" class="close-x"></div>
+				<div class="modal-content">
+					<div class="modal-content__img">
+						<img src="img/logo-sm.svg" alt="">
+					</div>
+					<div class="modal-content__hiding-content">
+						<div class="modal-content__title">Задайте запитання</div>
+						<div class="modal-content__subtitle"> Заповніть форму заявки для зворотнього зв’язку!</div>
+						<form id="askForm" method="POST" onsubmit="return false">
+							<div class="modal-input-row">
+								<input type="text" name="name" placeholder="Ваше ім`я" class="modal-input">
+							</div>
+							<div class="modal-input-row">
+								<input type="tel" name="tel" data-mask="+38-(000)-000-00-00" placeholder="Номер телефону" class="modal-input">
+							</div>
+							<div class="modal-input-row">
+								<textarea name="message" placeholder="Повідомлення" class="modal-input"></textarea>
+							</div>
+							<div class="modal-butn-row">
+								<button type="submit" data-rel="askForm" class="butn">надіслати</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="result" role="dialog" class="modal fade popup">
+			<div class="modal-dialog modal-dialog_sm">
+				<div role="button" data-dismiss="modal" class="close-x"></div>
+				<div class="modal-content">
+					<div class="modal-content__img">
+						<img src="img/logo-sm.svg" alt="">
+					</div>
+					<div class="modal-content__hiding-content">
+						<div class="modal-content__title">Ваша денна норма</div>
+						<div class="resultval"><span id='jsVal'></span> калл</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="thanks" role="dialog" class="modal fade popup">
+			<div class="modal-dialog modal-dialog_sm">
+				<div role="button" data-dismiss="modal" class="close-x"></div>
+				<div class="modal-content">
+					<div class="modal-content__img">
+						<img src="img/logo-sm.svg" alt="">
+					</div>
+					<div class="modal-content__hiding-content">
+						<div class="modal-content__title">Дякуємо!</div>
+						<div class="modal-content__subtitle">Ваше повідомлення надіслано. Зв'яжемося в Вами найближчим часом.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="price" role="dialog" class="modal fade popup">
+			<div class="modal-dialog modal-dialog_xl">
+				<div role="button" data-dismiss="modal" class="close-x"></div>
+				<div class="modal-content">
+					<div class="modal-content__img">
+						<img src="img/logo-sm.svg" alt="">
+					</div>
+					<div class="modal-content__hiding-content">
+						<div class="modal-content__title">Наші ціни</div>
+						<div class="modal-content__subtitle">Меню, розроблене і збалансоване для досягнення максимальних спортивних результатів.</div>
+						<div class="modal-content__table-wrap">
+							<table class="modal-content__table">
+								<tbody>
+									<tr>
+										<th>Період</th>
+										<th>1200 калл/день</th>
+										<th>1400 калл/день</th>
+										<th>1600 калл/день</th>
+										<th>1900 калл/день</th>
+										<th>2700 калл/день</th>
+										<th>3100 калл/день</th>
+									</tr>
+									<tr>
+										<td>Чотири неділі</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+									</tr>
+									<tr>
+										<td>Дві неділі</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+									</tr>
+									<tr>
+										<td>Одна неділя</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+									</tr>
+									<tr>
+										<td>День</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+										<td>500 грн/д.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="modal-content__table-text">Пробний день будь-якої калорійності: 220 грн/д.</div>
+						<div class="modal-content__table-butn">
+							<a href="#order" data-toggle="modal" class="butn">замовити</a>
+							<a data-dismiss="modal" href="#calc-section" class="butn scrolTosec">калькулятор</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="feedback" role="dialog" class="modal fade popup">
+			<div class="modal-dialog modal-dialog_xl">
+				<div role="button" data-dismiss="modal" class="close-x"></div>
+				<div class="modal-content">
+					<div class="modal-content__img">
+						<img src="img/logo-sm.svg" alt="">
+					</div>
+					<div class="modal-content__hiding-content">
+						<div class="modal-content__title">Залиште відгук</div>
+						<div class="modal-content__subtitle">Заповніть форму заявки та залишіть свій відгук про Broccoli</div>
+						<form id="feedbackForm" method="POST" onsubmit="return false">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="modal-input-row">
+										<input type="text" name="name" placeholder="Ваше ім`я" class="modal-input">
+									</div>
+									<div class="modal-input-row">
+										<input type="tel" name="tel" data-mask="+38-(000)-000-00-00" placeholder="Номер телефону" class="modal-input">
+									</div>
+									<div class="modal-input-row">
+										<input type="email" name="email" placeholder="Ваш E-mail" class="modal-input">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="modal-input-row">
+										<textarea name="message" placeholder="Ваш відгук" class="modal-input"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="modal-butn-row">
+								<button type="submit" data-rel="feedbackForm" class="butn">надіслати відгук</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="testemonial1" role="dialog" class="modal fade popup">
+			<div class="modal-dialog modal-dialog_xl">
+				<div role="button" data-dismiss="modal" class="close-x"></div>
+				<div class="modal-content modal-content_testemonial">
+					<div class="modal-content__testemonial-name">ірина гончар</div>
+					<div class="modal-content__testemonial-date">11.11.2017</div>
+					<div class="modal-content__testemonial-text">Так, спробував сьогодні доставку обідів. Що сподобалось: чітко по калоріям 2200 – те що треба,коли ходиш в зал,щоб зігнати пузіко) СУП БУВ КРУТИМ – купа овочей. А ще ... сподобались цитрусові в меню, коли їсиш без соусів, вони трохи пом”якшують сухість деяких продуктів. +1 за малу кількість солі і відсутність цукру! Так, спробував сьогодні доставку обідів. Що сподобалось : чітко по калоріям 2200 – те що треба,коли ходиш в зал,щоб зігнати пузіко) СУП ... БУВ КРУТИМ – купа овочей. А ще ... сподобались цитрусові в меню, коли їсиш без соусів, вони трохи пом”якшують сухість деяких продуктів. +1 за малу кількість солі і відсутність цукру!</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--scripts-->
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
