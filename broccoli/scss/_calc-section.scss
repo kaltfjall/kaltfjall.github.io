@@ -1,0 +1,319 @@
+#calc-section {
+	padding: 100px 0 50px;
+	@media (max-width: 991px) {
+		padding: 80px 0;
+	}
+	@media (max-width: 767px) {
+		padding: 60px 0;
+	}
+	.butn-row {
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+	}
+}
+
+.bg-calc-section {
+	position: absolute;
+	top: 66px;
+	right: 98px;
+	z-index: 0;
+}
+
+.text_fz20 {
+	font-size: 20px;
+	@media (max-width: 576px) {
+		font-size: unset;
+	}
+}
+
+.calc-img {
+	position: relative;
+	img {
+		@media (max-width: 991px) {
+			max-width: 150%;
+		}
+		@media (max-width: 767px) {
+			max-width: 85%;
+		}
+	}
+	@media (max-width: 991px) {
+		.calc-img {
+			text-align: center;
+		}
+	}
+}
+
+.calc-img__moved {
+	position: absolute;
+	left: 80px;
+	top: 150px;
+}
+
+.input-title {
+	line-height: 1;
+	margin-bottom: 12px;
+	padding-left: 18px;
+	@media (max-width: 576px) {
+		margin: 16px 0 12px 0;
+	}
+}
+
+.input-row {
+	margin-bottom: 30px;
+	justify-content: space-around;
+}
+
+.butn-row {
+	padding-top: 30px;
+}
+
+.jq-selectbox__trigger {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 5px 0 5px;
+	border-color: #cccccc transparent transparent transparent;
+	position: absolute;
+	right: 20px;
+	top: 21px;
+}
+
+select {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: -99999999px;
+}
+
+.jq-selectbox {
+	display: block;
+}
+
+.jq-selectbox.opened .jq-selectbox__select {
+	border-color: #92c54e;
+}
+
+.jq-selectbox.opened .jq-selectbox__select .jq-selectbox__trigger {
+	border-color: #92c54e transparent transparent transparent;
+}
+
+.jq-number input, .jq-selectbox__select {
+	display: block;
+	position: relative;
+	width: 100%;
+	border-radius: 25px;
+	border: 1px solid #bcbcbc;
+	background-color: transparent;
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	padding: 16px 18px;
+}
+
+.jq-number input:hover, .jq-number input:focus, .jq-selectbox__select:hover, .jq-selectbox__select:focus {
+	border-color: #92c54e;
+}
+
+.jq-number input:hover .jq-selectbox__trigger, .jq-number input:focus .jq-selectbox__trigger, .jq-selectbox__select:hover .jq-selectbox__trigger, .jq-selectbox__select:focus .jq-selectbox__trigger {
+	border-color: #92c54e transparent transparent transparent;
+}
+
+.jq-number input ::-webkit-input-placeholder, .jq-selectbox__select ::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #ccc;
+}
+
+.jq-number input ::-moz-placeholder, .jq-selectbox__select ::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #ccc;
+}
+
+.jq-number input :-ms-input-placeholder, .jq-selectbox__select :-ms-input-placeholder {
+	/* IE 10+ */
+	color: #ccc;
+}
+
+.jq-number input :-moz-placeholder, .jq-selectbox__select :-moz-placeholder {
+	/* Firefox 18- */
+	color: #ccc;
+}
+
+.jq-selectbox__select {
+	padding-right: 26px;
+}
+
+@media (max-width: 991px) {
+	.jq-number {
+		width: 100%;
+	}
+}
+
+.jq-selectbox__dropdown {
+	width: 100%;
+	max-width: 100%;
+	ul {
+		width: 100%;
+		-webkit-border-radius: 25px;
+		border-radius: 25px;
+		border: 1px solid #92c54e;
+		background: #f2f2f2;
+		padding: 10px 0;
+		li {
+			padding: 5px 18px;
+			white-space: normal;
+			&:hover {
+				background: rgba(75, 175, 80, 0.102);
+			}
+		}
+	}
+	.disabled {
+		color: #ccc;
+	}
+}
+
+.nice-select {
+	clear: both;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	user-select: none;
+	white-space: nowrap;
+	display: block;
+	position: relative;
+	width: 100%;
+	border-radius: 25px;
+	border: 1px solid #bcbcbc;
+	background-color: transparent;
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	padding: 17px 28px 14px 18px;
+	.current {
+		display: inline-block;
+		width: 100%;
+		overflow: hidden;
+	}
+	&:hover {
+		border-color: #92c54e;
+	}
+	&:after {
+		border-bottom: 2px solid #999;
+		border-right: 2px solid #999;
+		content: '';
+		display: block;
+		height: 8px;
+		width: 8px;
+		margin-top: -4px;
+		pointer-events: none;
+		position: absolute;
+		right: 12px;
+		top: 50%;
+		transform-origin: 66% 66%;
+		transform: rotate(45deg);
+		transition: all 0.15s ease-in-out;
+	}
+	&.disabled {
+		border-color: #ededed;
+		color: #999;
+		pointer-events: none;
+		&:after {
+			border-color: #cccccc;
+		}
+	}
+	&.wide {
+		width: 100%;
+		.list {
+			left: 0 !important;
+			right: 0 !important;
+		}
+	}
+	&.right {
+		float: right;
+		.list {
+			left: auto;
+			right: 0;
+		}
+	}
+	&.small {
+		font-size: 12px;
+		height: 36px;
+		line-height: 34px;
+		&:after {
+			height: 4px;
+			width: 4px;
+		}
+		.option {
+			line-height: 34px;
+			min-height: 34px;
+		}
+	}
+	.list {
+		background-color: #fff;
+		box-shadow: 0 1px 25px rgba(18, 18, 18, 0.1), inset 0 3px 0 #92c54e;
+		box-sizing: border-box;
+		opacity: 0;
+		overflow: hidden;
+		padding: 0;
+		pointer-events: none;
+		position: absolute;
+		width: 100%;
+		top: calc(100% + 15px);
+		left: 0;
+		transform-origin: 50% 0;
+		transform: scale(0.75) translateY(-21px);
+		transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+		z-index: 9;
+	}
+	.option {
+		cursor: pointer;
+		line-height: 1.3;
+		list-style: none;
+		outline: none;
+		padding: 6px 15px;
+		text-align: left;
+		transition: all 0.2s;
+		white-space: normal;
+	}
+}
+
+.nice-select:active, .nice-select.open, .nice-select:focus {
+	border-color: #999;
+}
+
+.nice-select.open:after {
+	transform: rotate(-135deg);
+}
+
+.nice-select.open .list {
+	opacity: 1;
+	pointer-events: auto;
+	transform: scale(1) translateY(0);
+}
+
+.nice-select .list:hover .option:not(:hover) {
+	background-color: transparent !important;
+}
+
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+	color: #92c64e;
+}
+
+.nice-select .option.selected {
+	color: #000;
+}
+
+.nice-select .option.disabled {
+	background-color: transparent;
+	color: #999;
+	cursor: default;
+}
+
+.no-csspointerevents .nice-select .list {
+	display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+	display: block;
+}
